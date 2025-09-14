@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CV — Alied Viviana Perdomo Payán</title>
+  <style>
+    :root{--bg:#0f2b3d;--accent:#6f4bd8;--muted:#6b7b86;--card:#132d3e;--white:#ffffff}
+    body{font-family:'Poppins',system-ui,Arial;background:linear-gradient(180deg,var(--bg),#041822);color:var(--white);padding:0;margin:0}
+    .wrap{max-width:1100px;margin:0 auto;padding:40px 20px}
+    nav{background:rgba(0,0,0,0.7);backdrop-filter:blur(10px);padding:14px 24px;display:flex;gap:24px;justify-content:center;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,0.1)}
+    nav a{color:#eaf7ff;text-decoration:none;font-size:15px;font-weight:500;padding:6px 12px;border-radius:6px;transition:all .3s;cursor:pointer}
+    nav a:hover{background:var(--accent);color:var(--white)}
+    section{margin-top:40px;display:none;animation:fade .6s ease}
+    section.active{display:block}
+    @keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+    /* Inicio */
+    header{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px;background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;border-radius:20px;overflow:hidden}
+    header::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6)}
+    .overlay{position:relative;z-index:1;max-width:650px}
+    .avatar{width:140px;height:140px;border-radius:50%;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.7);margin:0 auto 20px;border:4px solid var(--white)}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+    h1{margin:0;font-size:30px;font-weight:700}
+    .subtitle{color:#dceff4;margin-top:6px;font-size:16px;font-weight:300}
+    .motto{margin-top:16px;font-size:15px;color:#eaf7ff;font-style:italic}
+    .contact{margin-top:18px;font-size:14px}
+    .contact a{color:#cfeef7;text-decoration:none;display:block;margin:3px 0}
+    .badge{margin-top:10px;background:rgba(255,255,255,0.15);padding:6px 12px;border-radius:20px;font-size:12px;color:#ffffff;display:inline-block}
+
+    /* Secciones */
+    .card{background:rgba(255,255,255,0.05);padding:28px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,0.4);backdrop-filter:blur(6px)}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .pill{background:var(--accent);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:500}
+    h2{margin:0;font-size:20px}
+    p.lead{color:#e4f3f7;line-height:1.6}
+
+    /* Experiencia */
+    .exp-item{margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.1)}
+    .exp-item strong{display:block;font-size:15px}
+    .exp-date{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .exp-item ul{margin:0 0 0 18px;padding:0}
+    .exp-item li{margin-bottom:6px;font-size:14px;color:#dceff4}
+
+    /* Habilidades */
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+    .skill{background:rgba(255,255,255,0.08);padding:14px;border-radius:10px;cursor:pointer;transition:transform .3s}
+    .skill:hover{transform:translateY(-4px)}
+    .skill span{font-size:14px;font-weight:500;color:#f0f9fb}
+    .portfolio{display:none;margin-top:10px;padding:10px;background:rgba(255,255,255,0.08);border-radius:6px;font-size:13px;color:#eaf7ff}
+
+    /* Botón */
+    .print-btn{display:inline-block;margin-top:20px;background:var(--accent);color:var(--white);padding:12px 18px;border-radius:10px;text-decoration:none;cursor:pointer;font-size:14px;font-weight:500;transition:background .3s}
+    .print-btn:hover{background:#5436c9}
+  </style>
+</head>
+<body>
+  <nav>
+    <a onclick="showSection('inicio')">Inicio</a>
+    <a onclick="showSection('perfil')">Perfil</a>
+    <a onclick="showSection('experiencia')">Experiencia</a>
+    <a onclick="showSection('habilidades')">Habilidades</a>
+    <a onclick="showSection('educacion')">Educación</a>
+  </nav>
+
+  <div class="wrap">
+    <!-- INICIO -->
+    <section id="inicio" class="active">
+      <header>
+        <div class="overlay">
+          <div class="avatar"><img src="Captura de pantalla 2025-06-22 220421.png" alt="Foto de Alied Viviana Perdomo Payán"></div>
+          <h1>Alied Viviana Perdomo Payán</h1>
+          <div class="subtitle">Politóloga · Técnica en Sistemas — Gestión Social & Análisis Territorial</div>
+          <div class="motto">“Construyendo confianza y transparencia desde lo social hacia el desarrollo territorial.”</div>
+          <div class="contact">
+            <a href="mailto:vivianaperdomo88@gmail.com">vivianaperdomo88@gmail.com</a>
+            <a href="tel:+573165389974">+57 316 538 9974</a>
+            <a href="https://www.linkedin.com/in/viviana-perdomo-713000293" target="_blank">linkedin.com/in/viviana-perdomo-713000293</a>
+            <div class="badge">Disponibilidad: Marmato y Supía — Sí (disponible para desplazamientos)</div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="perfil">
+      <main class="card">
+        <div class="section-title">
+          <div class="pill">Perfil</div>
+          <h2>Perfil Profesional</h2>
+        </div>
+        <p class="lead">Politóloga con experiencia en <strong>gestión social, participación ciudadana y análisis territorial</strong>. He liderado procesos de investigación aplicada, mapeo de actores y diseño metodológico en contextos locales. Mi trabajo se orienta a la gestión de impactos sociales, construcción de confianza con comunidades y el fortalecimiento de procesos de rendición de cuentas. Poseo habilidades en comunicación estratégica, manejo de conflictos y análisis de datos, aplicables al sector minero-energético.</p>
+      </main>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+      <main class="card">
+        <div class="section-title">
+          <div class="pill">Experiencia</div>
+          <h2>Experiencia Profesional</h2>
+        </div>
+
+        <div class="exp-item">
+          <strong>Contraloría Municipal de Ibagué — Asistente de Planeación (Pasantía)</strong>
+          <div class="exp-date">Ibagué | Abril 2024 – Agosto 2024</div>
+          <ul>
+            <li>Consolidación de +15 informes de avance institucional con análisis estadístico y social.</li>
+            <li>Seguimiento de 20+ políticas y programas, con énfasis en participación ciudadana y rendición de cuentas.</li>
+            <li>Apoyo en relacionamiento con la comunidad y en procesos de transparencia.</li>
+            <li>Gestión documental y seguimiento de PQRSD.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <strong>Universidad del Tolima / Alcaldía de Ibagué — Asistente de Investigación</strong>
+          <div class="exp-date">Ibagué | Mayo 2023 – Diciembre 2023</div>
+          <ul>
+            <li>Diseño metodológico de investigación social aplicada con enfoque territorial.</li>
+            <li>Mapeo de actores institucionales y comunitarios, identificación de riesgos y necesidades.</li>
+            <li>Definición de indicadores sociales y rutas metodológicas para seguimiento de proyectos.</li>
+          </ul>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">Imprimir / Guardar como PDF</button>
+      </main>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <aside class="card">
+        <div class="section-title">
+          <div class="pill">Competencias</div>
+          <h2>Habilidades</h2>
+        </div>
+        <div class="skills">
+          <div class="skill" onclick="togglePortfolio('port1')"><span>Gestión Social y Comunitaria</span>
+            <div id="port1" class="portfolio">Ejemplo: Coordinación de talleres comunitarios en Ibagué para fortalecer la participación ciudadana en políticas públicas.</div>
+          </div>
+          <div class="skill" onclick="togglePortfolio('port2')"><span>Análisis Territorial</span>
+            <div id="port2" class="portfolio">Ejemplo: Mapeo de actores institucionales y comunitarios para proyectos de desarrollo territorial sostenible.</div>
+          </div>
+          <div class="skill" onclick="togglePortfolio('port3')"><span>Comunicación & Liderazgo</span>
+            <div id="port3" class="portfolio">Ejemplo: Liderazgo en mesas de trabajo interinstitucionales, asegurando consensos y acuerdos.</div>
+          </div>
+          <div class="skill" onclick="togglePortfolio('port4')"><span>Herramientas Técnicas</span>
+            <div id="port4" class="portfolio">Ejemplo: Análisis de bases de datos de participación ciudadana con Python y visualización de indicadores en Excel.</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion">
+      <aside class="card">
+        <div class="section-title">
+          <div class="pill">Educación</div>
+          <h2>Formación</h2>
+        </div>
+        <p><strong>Universidad del Tolima</strong><br> Ciencia Política (2019–2025) — Énfasis en Políticas Públicas, Planeación Territorial y Participación Ciudadana.</p>
+        <p><strong>SENA</strong><br> Técnico en Sistemas (2018)</p>
+        <p><strong>CENSA</strong><br> Curso de Economía (2020)</p>
+      </aside>
+    </section>
+  </div>
+
+  <script>
+    function togglePortfolio(id){
+      const el=document.getElementById(id);
+      el.style.display=(el.style.display==='block')?'none':'block';
+    }
+    function showSection(id){
+      const sections=document.querySelectorAll('section');
+      sections.forEach(s=>s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
